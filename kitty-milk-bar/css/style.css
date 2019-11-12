@@ -1,0 +1,45 @@
+body {
+    margin:0;
+    font-size: 18px;
+    font-family: "Open Sans";
+}
+
+body {
+    display:flex;
+    min-height:100vh;
+}
+body > div {flex:1;}
+
+.game-intro {
+    display:flex; 
+    flex-direction:column;
+    justify-content:center; 
+    align-items:center;
+}
+
+.logo-img {
+    width: 350px;
+}
+
+body button {
+    font-size: 30px;
+    background-color: #ff6e6e;
+    color: #fff;
+    padding: 20px 40px;
+    border: 0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#game-board {
+    position:relative;
+}
+#game-board canvas {
+    display: block;
+    margin:0 auto;
+    height:100vh;
+    background-image: url("../img/prefilled-background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
