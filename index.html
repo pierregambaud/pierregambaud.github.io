@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <title>Pierre Gambaud - Github profile</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet"> 
-</head>
-<body style="font-size: 18px; font-family: 'Open Sans', sans-serif;">
-    <h1>Pierre Gambaud - Github profile</h1>
-    <h2>Portfolio</h2>
-    <p>IronHack Module 1 project: <a href="./kitty-milk-bar/" target="_blank">Kitty milk bar</a></p>
-</body>
+  <head>
+    <meta charset='UTF-8'>
+    <title>Pierre Gambaud - Consultant & développeur fullstack JS</title>
+    <meta name='viewport' content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap' rel='stylesheet'> 
+    <link rel='stylesheet' href='./style.css'>
+  </head>
+
+  <body>
+    <div id='container'>
+      <h1>Pierre Gambaud</h1>
+      <h2>Consultant digital senior & développeur fullstack JS</h2>
+
+      <div id='links'>
+        <a href='https://www.linkedin.com/in/pierregambaud/' target='_blank'>
+          <img src='./images/linkedin.png' alt='Pierre Gambaud Linkedin' />
+        </a>
+        <a href='https://github.com/pierregambaud/' target='_blank'>
+          <img src='./images/github.png' alt='Pierre Gambaud Github' />
+        </a>
+        <a href='#' id='email'>
+          <img src='./images/email.png' alt='Pierre Gambaud Contact' />
+        </a>
+      </div>
+
+      <div id='popin-container' class='hidden'>
+        <div id='popin-content'>
+          <form id='contact-form' action='https://formspree.io/xzbjpgdq' method='POST' >
+            <p id='contact-form-status' class='hidden'></p>
+            <input type='email' name='email' id='email-field' placeholder='votre email'/>
+            <textarea type='text' rows='5' name='message' id='message-field' placeholder='votre message'></textarea>
+            <input type='verif' name='verif' id='verif-field' placeholder='Vérification anti-spam, écrire ici le mot : HUMAIN' />
+            <button id='contact-form-button'>Envoyer le message</button>
+            <a href='#' id='hide-popin-text-link'>fermer cette fenêtre</a>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script type='text/javascript' src='./script.js'></script>
+  </body>
 </html>
