@@ -28,6 +28,9 @@ h1 {
   margin-bottom: 0;
   line-height: 1.2em;
 }
+h1 a {
+  text-decoration: none;
+}
 
 h2 {
   font-size: 1.55em;
