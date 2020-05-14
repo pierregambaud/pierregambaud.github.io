@@ -36,8 +36,8 @@ window.addEventListener('DOMContentLoaded', function() {
     $submitButton.classList.add('hidden');
     $emailField.classList.add('hidden');
     $messageField.classList.add('hidden');
+    $verifField.classList.add('hidden');
     $status.classList.remove('hidden');
-    $verifField.classList.remove('hidden');
     $status.innerHTML = `Merci pour votre message, je vous réponds bientôt !`;
   }
 
